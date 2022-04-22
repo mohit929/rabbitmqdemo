@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/movies_db
+  application:
+    name: user-movie-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root123
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    fetchRegistry: true
+    registerWithEureka: true
